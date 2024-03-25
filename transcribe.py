@@ -48,7 +48,7 @@ def transcribe(model, filename):
 
         difference = after - before
         print(f"Transcription: '{result.transcript}' in {difference.seconds}s with confidence {result.confidence}")
-        print(f"Written to {outfile}"`)
+        print(f"Written to {outfile}")
         return result.transcript
 
     except Exception as e:
